@@ -428,8 +428,6 @@
             this.Text = "Hosts File Editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.LocationChanged += new System.EventHandler(this.Form1_LocationChanged);
-            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);

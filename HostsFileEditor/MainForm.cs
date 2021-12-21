@@ -18,9 +18,7 @@ namespace Hosts_File_Editor
         string hostsFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), "drivers/etc/hosts");
         string hostFileContentBackup = "";
         ContextMenuStrip listView_contextMenuStrip = new ContextMenuStrip();
-
         bool ResetSettings = false;
-
 
         public Form1()
         {
@@ -315,16 +313,6 @@ namespace Hosts_File_Editor
             Settings.Default.Save();
         }
 
-        private void Form1_SizeChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_LocationChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void rememberWindowLayoutToolStripMenuItem_CheckStateChanged(object sender, EventArgs e)
         {
             Settings.Default.RememberWindowLayout = rememberWindowLayoutToolStripMenuItem.Checked;
@@ -344,11 +332,6 @@ namespace Hosts_File_Editor
         private void cutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             textBox.Cut();
-        }
-
-        private void textBox_KeyDown(object sender, KeyEventArgs e)
-        {
-
         }
 
         private void listView_SelectedIndexChanged(object sender, EventArgs e)
